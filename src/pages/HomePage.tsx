@@ -27,7 +27,7 @@ function HomePage() {
         isFetchingNextPage,
     } = useInfinitePosts({
         category: selectedCategory,
-        pageSize: 10,
+        pageSize: 5,
     });
 
     // 모든 페이지의 게시글을 하나의 배열로 합치기
