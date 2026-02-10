@@ -48,6 +48,7 @@ const googleProvider = new GoogleAuthProvider();
  */
 export async function signInWithGoogle(): Promise<User> {
     const result = await signInWithPopup(auth, googleProvider);
+    console.log("service auth signInWithGoogle result --- ", result);
     return formatUser(result.user);
 }
 
