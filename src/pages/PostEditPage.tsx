@@ -3,8 +3,6 @@ import { useParams, useNavigate } from "react-router-dom";
 import { useAuthStore } from "@/store/authStore";
 import PostForm from "@/components/PostForm";
 import type { PostInput } from "@/types";
-
-// ----------------------------------
 import { usePost } from "@/hooks/queries";
 import { useUpdatePost } from "@/hooks/mutations";
 
@@ -50,9 +48,7 @@ function PostEditPage() {
             <div className="max-w-2xl mx-auto">
                 <div className="bg-white rounded-lg shadow p-8 text-center">
                     <p className="text-red-600 mb-4">
-                        {error
-                            ? "게시글을 찾을 수 없습니다."
-                            : "수정 권한이 없습니다."}
+                        {error ? "게시글을 찾을 수 없습니다." : "수정 권한이 없습니다."}
                     </p>
                     <button
                         onClick={() => navigate(-1)}
@@ -78,6 +74,7 @@ function PostEditPage() {
                 onSubmit={handleSubmit}
                 submitLabel="수정하기"
                 isLoading={updatePostMutation.isPending}
+                userId={user?.uid ?? ""}
             />
         </div>
     );
