@@ -22,6 +22,6 @@ jobs:
             - uses: FirebaseExtended/action-hosting-deploy@v0
               with:
                   repoToken: ${{ secrets.GITHUB_TOKEN }}
-                  firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_MY_DEV_BLOG_54C5B }}
+                  firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_MY_DEV_BLOG_72ACD }}
                   channelId: live
                   projectId: my-dev-blog-72acd
