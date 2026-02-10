@@ -1,6 +1,6 @@
-# robots.txt for dev-blog-somy
+# robots.txt for my-dev-blog
 User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://dev-blog-somy.web.app/sitemap.xml
+Sitemap: https://my-dev-blog-72acd.web.app/sitemap.xml
